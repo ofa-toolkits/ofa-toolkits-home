@@ -1,0 +1,12 @@
+<div class="col-xs-12 col-sm-8 col-md-9 content-column">
+    {{ partial "mobile_nav_toggle.html" . }}
+    <ul>
+      {{ $urlPre := "https://api.github.com" }}
+      {{ $reposJ := getJSON $urlPre "/users/ofa-toolkits/repos" }}
+
+      {{ range first 10 $reposJ }}
+      {{if .has_pages }}
+          <li><a href="https://ofa-toolkits.github.io/{{.name}} " target="_blank">{{ .name }}</a></li>
+  {{ end }}
+      {{ end }}
+    </ul>
