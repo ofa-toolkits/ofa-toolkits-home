@@ -6,7 +6,7 @@
 
       {{ range first 10 $reposJ }}
       {{if .has_pages }}
-          <li><a href="https://ofa-toolkits.github.io/{{.name}} " target="_blank">{{ .name }}</a></li>
+          <iframe src="https://ofa-toolkits.github.io/{{.name}} " target="_blank">{{ .name }}</iframe>
   {{ end }}
       {{ end }}
     </ul>
