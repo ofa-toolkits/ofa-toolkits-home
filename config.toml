@@ -12,7 +12,7 @@ style = "blue"
   description = "OFA Toolkits"
   copyright = "&copy;2017 Organizing For Action"
   sidebarAbout = [
-    "put toolkit info here"
+    "ofa test"
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
